@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Flask - Métodos HTTP</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Interaja com a API Flask</h1>
+
+    <div>
+        <h3>Obter Dados (GET)</h3>
+        <button onclick="metodoGET()">Obter Dados</button>
+        <pre id="get-response"></pre>
+    </div>
+
+    <div>
+        <h3>Adicionar Dado (POST)</h3>
+        <input type="text" id="nome" placeholder="Nome">
+        <input type="text" id="valor" placeholder="Valor">
+        <button onclick="metodoPOST()">Adicionar Dado</button>
+        <pre id="post-response"></pre>
+    </div>
+
+    <div>
+        <h3>Atualizar Dado (PUT)</h3>
+        <input type="text" id="nome-put" placeholder="Nome">
+        <input type="text" id="valor-put" placeholder="Novo Valor">
+        <button onclick="metodoPUT()">Atualizar Dado</button>
+        <pre id="put-response"></pre>
+    </div>
+
+    <div>
+        <h3>Remover Dado (DELETE)</h3>
+        <input type="text" id="nome-delete" placeholder="Nome">
+        <button onclick="metodoDELETE()">Remover Dado</button>
+        <pre id="delete-response"></pre>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
